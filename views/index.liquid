@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spreadsheet Party</title>
+    <script type="importmap">
+      {
+        "imports": {
+	  "turbo_loader": "https://esm.sh/@hotwired/turbo-rails@8.0.2/app/javascript/turbo/index.js",
+	  {{ :importmap }}
+        }
+      }
+    </script>
+  </head>
+  <body>
+    {{ :html }}
+
+    <script src="https://cdn.jsdelivr.net/gh/rottytooth/FatFingerJS/fatfinger.js"></script>
+    <script type="module">
+	    import "turbo_loader";
+            {{ :js }}
+    </script>
+
+    <style>
+      {{ :css }}
+    </style>
+
+  </body>
+</html>
