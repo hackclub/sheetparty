@@ -4,7 +4,7 @@ source "https://rubygems.org"
 
 # gem "rails"
 
-gem "sinatra", "~> 4.0"
+gem "sinatra", "~> 4.2"
 
 gem "puma", "~> 6.4"
 
